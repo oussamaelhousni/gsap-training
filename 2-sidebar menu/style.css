@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-main: #636e72;
+  --bg-aside: #2f3640;
+}
+
+.container {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
+
+.sidebar {
+  height: 100%;
+  flex-shrink: 0;
+  width: 300px;
+  background: var(--bg-aside);
+  transform: translateX(-300px);
+  color: white;
+  padding: 2rem;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  min-height: 30px;
+  background: var(--bg-main);
+  transform: translateX(-300px);
+  padding: 2rem 3rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+  color: var(--bg-main);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    color: white;
+  }
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 3.5rem;
+  aspect-ratio: 1/1;
+  transition: background-color 0.2s ease;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+
+button:hover {
+  background-color: #b2bec3;
+}
