@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Pacifico", cursive;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg: #00d8d6;
+  --color: #485460;
+}
+
+body {
+  overflow-x: hidden;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+}
+
+.animated-section {
+  position: relative;
+  color: var(--color);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  & > * {
+    flex: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+}
+
+.watermark {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  font-size: 50vh;
+  opacity: 0.1;
+  user-select: none;
+}
+
+.line {
+  background: #00000080;
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .mask {
+    display: flex;
+    justify-content: center;
+    p {
+      max-width: 30rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+}
+.heading {
+  padding: 1.5rem 1rem;
+  position: relative;
+  font-size: 6rem;
+  span {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 2.5rem;
+    opacity: 0.7;
+  }
+}
+
+.mask {
+  overflow: hidden;
+}
