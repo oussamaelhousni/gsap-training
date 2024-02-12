@@ -22,15 +22,26 @@ section {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: #fff;
 }
 
 .card {
-  width: 30rem;
-  flex-basis: 25%;
+  width: 18rem;
 }
 
 .card img {
   max-width: 100%;
-  object-fit: contain;
+}
+
+.line {
+  margin-top: 1rem;
+  height: 1px;
+  background: #000;
+  width: 100%;
+}
+.card span {
+  font-size: 1.8rem;
 }
